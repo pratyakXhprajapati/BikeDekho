@@ -40,23 +40,23 @@ Before you begin, ensure you have met the following requirements:
 ## Screenshots
 
 
-![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/landing%20page.png)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/aftersignup.png)
 sign up image:
-![image](https://drive.google.com/file/d/1jHEyPP0cihecYk6MF8OBMvywCeQ0Buy3/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/register%20page.png)
 
 Sign in Image:
-![image](https://drive.google.com/file/d/17F6tzs3aPCqz-kikGi7LvIf6WncosAic/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/login.png)
 
 Contact us page:
-![image](https://drive.google.com/file/d/1--CMnuuj7QmOqEtpFHfHrsCmhFhXPl7f/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/contact%20us%20page.png)
 
 Filling form and sending the data :
-![image](https://drive.google.com/file/d/1n3eIqutHadGaSQQfKvC47MiymgB5QoZK/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/contactusquery.png)
 
 Database screenshots(data stored in database)
 signed users screenshots (database):
-![image](https://drive.google.com/file/d/1Vpj8WuDRyoqvVT9CzaDJO0VXQ5INlxfY/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/backend2.png)
 screenshots of form filled in contact us page:
-![image](https://drive.google.com/file/d/1n3eIqutHadGaSQQfKvC47MiymgB5QoZK/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/backend2.png)
 ![image](https://drive.google.com/file/d/1C7_X8mCuMbFesZHTv0fQ0WvZcLUzxQGi/view?usp=drive_link)
 
