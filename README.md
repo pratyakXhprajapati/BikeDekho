@@ -40,7 +40,7 @@ Before you begin, ensure you have met the following requirements:
 ## Screenshots
 
 
-![image](https://drive.google.com/file/d/17F6tzs3aPCqz-kikGi7LvIf6WncosAic/view?usp=sharing)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/landing%20page.png)
 sign up image:
 ![image](https://drive.google.com/file/d/1jHEyPP0cihecYk6MF8OBMvywCeQ0Buy3/view?usp=drive_link)
 
