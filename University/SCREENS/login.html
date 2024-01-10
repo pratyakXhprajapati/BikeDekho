@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Login</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="signup.css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="center">
-      <h1>Login</h1>
-      <form id="loginForm" method="POST" action="">
-        <div class="txt_field">
-          <input type="email" id="email" name="email" required />
-          <span></span>
-          <label>Email</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" id="password" name="password" required />
-          <span></span>
-          <label>Password</label>
-        </div>
-        <input type="button" onclick="login()" class="btn" value="Login" />
-        <div class="signup_link">
-          Don't have an account? <a href="../SCREENS/signup.html">Sign Up</a>
-        </div>
-      </form>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1>Login</h1>
+        <form id="loginForm" method="POST" action="">
+          <div class="txt_field">
+            <input type="email" id="email" name="email" required />
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" id="password" name="password" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <input type="button" onclick="login()" class="btn" value="Login" />
+          <div class="signup_link">
+            Don't have an account? <a href="../SCREENS/signup.html">Sign Up</a>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <script>
-    function login() {
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
+    <script>
+      function login() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-      // Validate inputs (add more validation if needed)
-      if (!email || !password) {
-        alert("Please fill in all the required fields");
-        return;
+  // Validate inputs (add more validation if needed)
+  if (!email || !password) {
+    alert("Please fill in all the required fields");
+    return;
+  }
+
+  // Prepare data for the API request
+  var data = {
+    email: email,
+    password: password,
+  };
+
+  // Replace the URL with your actual login endpoint
+  var loginUrl = "http://localhost:5000/api/auth/login"; // Fixed the typo here
+
+  // Make the API call
+  fetch(loginUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
+      return response.json();
+    })
+    .then((data) => {
+      // Handle the response (you can redirect or show a success message)
+      console.log("Login successful:", data);
+      alert("Login successful!");
+      localStorage.setItem("user", JSON.stringify(data.user));
+      window.location.href = "../index.html";
+    })
+    .catch((error) => {
+      // Handle errors (you can show an error message)
+      console.error("Error:", error.message);
+      alert("Login failed. Please check your credentials and try again.");
+    });
+}
 
-      // Prepare data for the API request
-      var data = {
-        email: email,
-        password: password,
-      };
-
-      // Replace the URL with your actual login endpoint
-      var loginUrl = "https://bike-dekho.vercel.app/api/auth/login"; // Fixed the typo here
-
-      // Make the API call
-      fetch(loginUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.json();
-        })
-        .then((data) => {
-          // Handle the response (you can redirect or show a success message)
-          console.log("Login successful:", data);
-          alert("Login successful!");
-          localStorage.setItem("user", JSON.stringify(data.user));
-          window.location.href = "../index.html";
-        })
-        .catch((error) => {
-          // Handle errors (you can show an error message)
-          console.error("Error:", error.message);
-          alert("Login failed. Please check your credentials and try again.");
-        });
-    }
-
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
