@@ -40,25 +40,23 @@ Before you begin, ensure you have met the following requirements:
 ## Screenshots
 
 
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/e7ca1687-daf9-4004-b6ba-f80936644d32)
+![image](https://drive.google.com/file/d/17F6tzs3aPCqz-kikGi7LvIf6WncosAic/view?usp=sharing)
 sign up image:
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/f3892d09-ba22-463b-ad41-19182d496aac)
+![image](https://drive.google.com/file/d/1jHEyPP0cihecYk6MF8OBMvywCeQ0Buy3/view?usp=drive_link)
 
-Home page:
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/36a83f93-5bc5-4188-a897-7a5eb2397ae6)
+Sign in Image:
+![image](https://drive.google.com/file/d/17F6tzs3aPCqz-kikGi7LvIf6WncosAic/view?usp=drive_link)
 
 Contact us page:
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/d67d8e82-9069-4fc0-a86b-662a0b3d721a)
+![image](https://drive.google.com/file/d/1--CMnuuj7QmOqEtpFHfHrsCmhFhXPl7f/view?usp=drive_link)
 
 Filling form and sending the data :
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/e195956e-7140-4323-80b0-a1e3baeedb60)
+![image](https://drive.google.com/file/d/1n3eIqutHadGaSQQfKvC47MiymgB5QoZK/view?usp=drive_link)
 
 Database screenshots(data stored in database)
 signed users screenshots (database):
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/18a2dd83-105e-4590-bfdf-9b639f176954)
-
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/baf7b6aa-eb3b-4636-a635-8da62c84c2d8)
+![image](https://drive.google.com/file/d/1Vpj8WuDRyoqvVT9CzaDJO0VXQ5INlxfY/view?usp=drive_link)
 screenshots of form filled in contact us page:
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/51a401e0-e69d-431b-968a-4d5cfc05b7b6)
-![image](https://github.com/Srivastava-Ankit-LPU/Xenostack/assets/83294365/c1ec9de7-e41b-4d8f-a5d6-0842b58913f7)
+![image](https://drive.google.com/file/d/1n3eIqutHadGaSQQfKvC47MiymgB5QoZK/view?usp=drive_link)
+![image](https://drive.google.com/file/d/1C7_X8mCuMbFesZHTv0fQ0WvZcLUzxQGi/view?usp=drive_link)
 
