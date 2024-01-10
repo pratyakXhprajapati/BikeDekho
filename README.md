@@ -57,6 +57,5 @@ Database screenshots(data stored in database)
 signed users screenshots (database):
 ![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/backend2.png)
 screenshots of form filled in contact us page:
-![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/backend2.png)
-![image](https://drive.google.com/file/d/1C7_X8mCuMbFesZHTv0fQ0WvZcLUzxQGi/view?usp=drive_link)
+![image](https://github.com/wtfpratyaksh/BikeDekho/blob/main/SS/bakcend.png)
 
