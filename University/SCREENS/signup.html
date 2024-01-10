@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1>Register</h1>
+        <form id="signupForm" method="POST" action="">
+          <div class="txt_field">
+            <input type="text" id="name" name="name" required />
+            <span></span>
+            <label>Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="email" id="email" name="email" required />
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" id="password" name="password" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="txt_field">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="cpassword"
+              required
+            />
+            <span></span>
+            <label>Confirm Password</label>
+          </div>
+          <input type="button" onclick="signup()" class="btn" value="Sign Up" />
+          <div class="signup_link">
+            Have an Account ? <a href="../SCREENS/login.html">Login Here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function signup() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+
+  // Validate inputs (add more validation if needed)
+  if (!name || !email || !password || !confirmPassword) {
+    alert("Please fill in all the required fields");
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
+
+  // Prepare data for the API request
+  var data = {
+    username: name,
+    email: email,
+    password: password,
+    confirmPassword: confirmPassword,
+  };
+
+  // Replace the URL with your actual signup endpoint
+  var signupUrl = "http://localhost:5000/api/auth/signup"; // Fixed the typo here
+
+  // Make the API call
+  fetch(signupUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Handle the response (you can redirect or show a success message)
+      console.log("Signup successful:", data);
+      alert("Signup successful!");
+      localStorage.setItem("user", JSON.stringify(data.result));
+      window.location.href = "../index.html";
+    })
+    .catch((error) => {
+      // Handle errors (you can show an error message)
+      console.error("Error:", error.message);
+      alert("Signup failed. Please try again later.");
+    });
+}
+
+    </script>
+  </body>
+</html>
