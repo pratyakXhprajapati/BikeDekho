@@ -40,7 +40,7 @@ Before you begin, ensure you have met the following requirements:
 ## Screenshots
 
 
-![image](https://drive.google.com/file/d/1iu4XSp299oA4nZ8pCjVJ-TC4qZ-N7QSF/view?usp=drive_link)
+![image](https://drive.google.com/file/d/1C7_X8mCuMbFesZHTv0fQ0WvZcLUzxQGi/view?usp=drive_link)
 sign up image:
 ![image](https://drive.google.com/file/d/1jHEyPP0cihecYk6MF8OBMvywCeQ0Buy3/view?usp=drive_link)
 
